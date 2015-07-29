@@ -1,14 +1,14 @@
-package hello;
+package br.com.hello.controllers;
 
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.stereotype.Controller;
 
-@RestController
+@Controller
 public class HelloController {
 
   @RequestMapping("/")
   public String index() {
-    return "Greetings from Spring Boot!";
+    return "index";
   }
 
 }
