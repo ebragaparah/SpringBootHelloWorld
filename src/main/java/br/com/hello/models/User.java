@@ -21,7 +21,9 @@ public class User {
         this.lastName = lastName;
     }
 
+    public Long getId() { return id; }
     public String getFirstName() { return firstName; }
+    public String getLastName() { return lastName; }
 
     @Override
     public String toString() {

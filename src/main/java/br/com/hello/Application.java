@@ -21,7 +21,7 @@ public class Application {
   @Bean
   public InternalResourceViewResolver internalResourceViewResolver() {
     InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-    resolver.setPrefix("WEB-INF/jsp/");
+    resolver.setPrefix("/WEB-INF/jsp/");
     resolver.setSuffix(".jsp");
     resolver.setViewClass(JstlView.class);
     return resolver;
@@ -36,7 +36,9 @@ public class Application {
     UserRepository repository = context.getBean(UserRepository.class);
     repository.save(user);
     for (User user_example : repository.findAll()) {
+      System.out.println(user_example.getId());
       System.out.println(user_example.getFirstName());
+      System.out.println(user_example.getLastName());
     }
   }
 

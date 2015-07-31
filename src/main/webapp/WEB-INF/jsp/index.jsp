@@ -5,6 +5,6 @@
       <title>Pagina de inicio do Exemplo do SpringBoot</title>
   </head>
   <body>
-    Pagina de inicio do Exemplo do SpringBoot - Indice de usuarios
+    Pagina de inicio do Exemplo do SpringBoot
   </body>
 </html>
